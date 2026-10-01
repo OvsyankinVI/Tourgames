@@ -1,0 +1,4 @@
+# Local Worker secrets only. Copy to proxy/.dev.vars (gitignored).
+LUNDA_AUTH_TOKEN=
+LUNDA_PROFILE_ID=
+ALLOWED_ORIGIN=http://localhost:5173
