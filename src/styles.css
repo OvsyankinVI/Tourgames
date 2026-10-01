@@ -1376,3 +1376,22 @@ h1>span {
 .lunda-connection input { font-size: 16px; }
 .lunda-connection .field-error:empty { display: none; }
 @media(max-width:600px) { .connection-active { align-items: flex-start; flex-direction: column; } .lunda-connection .field-pair { grid-template-columns: minmax(0,1fr); } }
+
+
+/* List / map view */
+.results-actions{display:flex;align-items:center;gap:16px}
+.view-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 14px;border:1px solid #dfe5d6;border-radius:10px;background:#fff;font-size:12px;font-weight:600;color:#455441}
+.view-toggle:hover,.view-toggle.active{background:#eaf0df;border-color:#d5dfc8}
+.tournament-map-wrap{position:relative;margin-top:4px}
+.tournament-map{height:min(68vh,650px);min-height:480px;border:1px solid #dfe5d6;border-radius:18px;overflow:hidden;background:#e9eee5}
+.map-status{position:absolute;z-index:500;top:12px;left:50%;transform:translateX(-50%);padding:8px 12px;border-radius:9px;background:#fff;box-shadow:0 4px 18px #2635261f;font-size:11px;color:#687260;pointer-events:none}
+.map-popup{min-width:220px;max-width:270px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.map-popup strong{display:block;font-size:14px;line-height:1.35;margin-bottom:5px;color:#252c28}
+.map-popup .map-club{font-size:11px;color:#687260;margin-bottom:9px}
+.map-popup .map-tournament{padding:8px 0;border-top:1px solid #eceee7}
+.map-popup .map-tournament:first-of-type{border-top:0}
+.map-popup .map-title{font-size:12px;font-weight:600;line-height:1.35}
+.map-popup .map-meta{font-size:11px;color:#687260;margin-top:4px}
+.map-popup .map-more{font-size:10px;color:#687260;margin-top:7px}
+.leaflet-control-attribution{font-size:9px!important}
+@media(max-width:767px){.results-heading{align-items:flex-start}.results-actions{flex-direction:column;align-items:stretch;gap:6px}.view-toggle{font-size:11px;padding:0 10px}.tournament-map{height:62vh;min-height:430px;border-radius:14px}.map-status{white-space:nowrap;max-width:calc(100% - 24px);overflow:hidden;text-overflow:ellipsis}}
